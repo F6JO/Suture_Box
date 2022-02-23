@@ -1,0 +1,8 @@
+__pycache__/
+__init__.pyc
+*.py[cod]
+output/
+test_dict.txt
+url.txt
+tester.py
+launch.json

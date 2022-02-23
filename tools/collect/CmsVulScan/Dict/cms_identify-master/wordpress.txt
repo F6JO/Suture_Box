@@ -1,0 +1,17 @@
+/robots.txt------wordpress------WordPress
+/license.txt------wordpress------WordPress
+/readme.txt------wordpress------WordPress
+/help.txt------wordpress------WordPress
+/readme.html------wordpress------WordPress
+/readme.htm------wordpress------WordPress
+/wp-admin/css/colors-classic.css------wordpress------WordPress
+/wp-admin/js/media-upload.dev.js------wordpress------WordPress
+/wp-content/plugins/akismet/akismet.js------wordpress------WordPress
+/wp-content/themes/classic/rtl.css------wordpress------WordPress
+/wp-content/themes/twentyeleven/readme.txt------wordpress------WordPress
+/wp-content/themes/twentyten/style.css------wordpress------WordPress
+/wp-includes/css/buttons.css------wordpress------WordPress
+/wp-includes/js/scriptaculous/wp-scriptaculous.js------wordpress------WordPress
+/wp-includes/js/tinymce/langs/wp-langs-en.js------wordpress------WordPress
+/wp-includes/js/tinymce/wp-tinymce.js------wordpress------WordPress
+/wp-includes/wlwmanifest.xml------wordpress------WordPress

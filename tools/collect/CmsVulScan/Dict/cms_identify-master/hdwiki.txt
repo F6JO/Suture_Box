@@ -1,0 +1,16 @@
+/robots.txt------hdwiki------HdWiki
+/install/testdata/hdwikitest.sql------hdwiki------HdWiki
+/js/api.js------hdwiki------HdWiki
+/js/editor/editor.js------hdwiki------HdWiki
+/js/hdeditor/hdeditor.min.js------hdwiki------HdWiki
+/js/hdeditor/skins/content.css------hdwiki------HdWiki
+/js/jqeditor/hdwiki.js------hdwiki------HdWiki
+/js/jqeditor/skins/content_default.css------hdwiki------HdWiki
+/plugins/hdapi/view/admin_hdapi.htm------hdwiki------HdWiki
+/plugins/mwimport/desc.xml------hdwiki------HdWiki
+/plugins/mwimport/view/admin_mwimport.htm------hdwiki------HdWiki
+/plugins/ucenter/view/admin_ucenter.htm------hdwiki------HdWiki
+/style/aoyun/hdwiki.css------hdwiki------HdWiki
+/style/default/admin/admin.css------hdwiki------HdWiki
+/style/default/desc.xml------hdwiki------HdWiki
+/view/default/admin_addlink.htm------hdwiki------HdWiki

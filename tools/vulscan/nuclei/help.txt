@@ -1,0 +1,111 @@
+93DAC25C5B1F354647B4810BA84DCFC856_中.txt
+目标：
+   -u, - target string[]要扫描的目标URL/主机
+   -l, - list包含要扫描的目标URL/主机列表的文件的字符串路径（每行一个）
+   -使用resume.cfg恢复恢复扫描（将禁用群集）
+
+模板:
+   -t, - templates字符串[]要包含在扫描中的模板或模板目录路径
+   -tu, - template-url string[] url包含要运行的模板列表
+   -nt, - new-templates仅运行在最新的nuclei-templates发行版中添加的新模板
+   -w, - workflows string[]要包含在扫描中的工作流或工作流目录路径
+   -wu, - workflow-url string[] url包含要运行的工作流列表
+   -验证验证向nuclei传递的模板
+   -tl列出所有可用模板
+
+过滤：
+   -tags string[]执行包含提供的标记的模板子集
+   -itags, - include-tags string[]默认拒绝列表中允许执行更多侵入性模板的标记
+   -etags, - exclude-tags字符串[]使用提供的标记排除模板
+   -it, - include-templates字符串[]要执行的模板，即使这些模板在默认或配置中被排除
+   -et, - exclude-templates字符串[]要排除的模板或模板目录路径
+   -s, - severity值[]基于严重性运行的模板。 可能值：INFO、low、medium、high、critical
+   -es, - exclude-severity value[]基于严重性要排除的模板。 可能值：INFO、low、medium、high、critical
+   -pt, - type value[]要执行的协议类型。 可能值：dns、文件、http、无头、网络、工作流、ssl、websocket、whois
+   -ept, - exclude-type值[]不执行的协议类型。 可能值：dns、文件、http、无头、网络、工作流、ssl、websocket、whois
+   -a, - author字符串[]执行由指定作者（共同创建）的模板
+   -id, - template-id string[]要运行的模板ID列表（逗号分隔，文件）
+   -eid, - exclude-id string[]要排除的模板ID列表（逗号分隔，文件）
+
+输出：
+   -o, - output字符串输出文件，用于写入发现的问题/漏洞
+   -仅静默显示结果
+   -nc，- no-color禁用输出内容着色（ANSI转义代码）
+   -JSONL（INES）格式的json写输出
+   -irr, - include-rr在JSONL输出中包含请求/响应对（仅用于查找）
+   -nm, - no-meta不显示匹配的元数据
+   -nts, - no-timestamp不在CLI输出中显示时间戳元数据
+   -rdb, - report-db字符串本地核报告数据库（始终使用此命令来持久化报告数据）
+   -ms, - matcher-status显示可选的匹配失败状态
+   -me, - markdown -导出字符串目录以将结果导出为markdown格式
+   -se, - sarif -导出字符串文件以将结果导出为sarif格式
+
+配置：
+   -配置到nuclei配置文件的字符串路径
+   -rc、- report-config字符串核报告模块配置文件
+   -H, - header字符串[]标头中的自定义标头:值格式
+   -V, - var值var = value格式的自定义变量
+   -r、- resolvers字符串文件，包含细胞核的解析程序列表
+   -sr、- system-resolvers使用系统DNS作为错误回退进行解析
+   -被动启用被动HTTP响应处理模式
+   -ev, - env-vars启用要在模板中使用的环境变量
+   -cc, - client-cert字符串客户端证书文件（PEM编码），用于根据扫描的主机进行身份验证
+   -ck, - client-key字符串客户端密钥文件（PEM编码），用于根据扫描的主机进行身份验证
+   -ca, - client-ca字符串客户端证书颁发机构文件（PEM编码），用于根据扫描的主机进行身份验证
+
+Interactsh：
+   -iserver,-interactsh-server字符串自托管实例的Interactsh服务器url（默认:?oast.?,?oast.?,?oast.?,?oast.?,?oast.?,?oast.?,?oast.?）
+   -itoken, - interactsh -自托管Interactsh服务器的令牌字符串身份验证令牌
+   -Interactions-cache-size int要保留在Interactions缓存中的请求数（默认5000）
+   -交互 -逐出int从缓存逐出请求之前等待的秒数（默认值60）
+   -Interactions-poll-duration int每个交互轮询请求之前等待的秒数（默认值5）
+   -交互 -冷却 -退出前交互轮询的INT额外时间（默认5）
+   -ni, - no-interactsh禁用用于OAST测试的Interactsh服务器，排除基于OAST的模板
+
+速率限制：
+   -rl，- rate-limit int每秒发送的最大请求数（默认150）
+   -rlm, - rate-limit-minute int每分钟发送的最大请求数
+   -bs, - bulk-size int每个模板并行分析的最大主机数（默认值25）
+   -c, - concurrency int要并行执行的模板的最大数量（默认值25）
+   -hbs, - headless-bulk-size int每个模板并行分析的无头主机的最大数量（默认10）
+   -hc, - headless-concurrency int要并行执行的无头模板的最大数量（默认为10）
+
+优化：
+   -超时前等待的超时时间（以秒为单位）（默认值5）
+   -重试失败请求的次数（默认值为1）
+   -mhe, - max-host-error从扫描跳过之前主机的int最大错误（默认为30）
+   -project使用项目文件夹以避免多次发送同一请求
+   -project-path字符串设置特定的项目路径（默认“/var/folders/yx/7f8n6rdd1sxdbt8xh27qfl700000gn/T/”）
+   -spm, - stop-at-first-path在第一次匹配后停止处理HTTP请求（可能会破坏模板/工作流逻辑）
+   -stream stream模式 -开始详细说明而不对输入进行排序
+
+无头：
+   -无头启用需要无头浏览器支持的模板（linux上的root用户将禁用沙盒）
+   -page -在无头模式下等待每个页面的超时整秒（默认为20）
+   -sb, - show-browser使用无头模式运行模板时在屏幕上显示浏览器
+   -sc, - system-chrome使用本地安装的chrome浏览器，而不是nuclei安装的浏览器
+
+调试：
+   -调试显示所有请求和响应
+   -debug-req显示所有已发送的请求
+   -debug-resp显示所有接收到的响应
+   -p, - proxy string[]要使用的HTTP/SOCKS5代理列表（逗号分隔或文件输入）
+   -tlog, - trace-log字符串文件，用于写入发送的请求跟踪日志
+   -elog, - error -用于写入发送请求错误日志的日志字符串文件
+   -版本显示核心版本
+   -v, - verbose显示详细输出
+   -为扫描加载的vv显示模板
+   -tv, - templates-version显示已安装的nuclei-templates的版本
+
+更新：
+   -将更新nuclei引擎更新为最新发布版本
+   -ut, - update-templates更新nuclei-templates至最新发布版本
+   -ud, - update-directory字符串覆盖默认目录以安装nuclei-templates（默认“/Users/guoyansong/nuclei-templates”）
+   -duc, - disable-update-check禁用自动核/模板更新检查
+
+统计信息：
+   -stats显示有关正在运行的扫描的统计信息
+   -sj, - stats-json以JSONL（ines）格式将统计数据写入输出文件
+   -si, - stats -间隔int显示统计信息更新之间等待的秒数（默认值5）
+   -m, - metrics在端口上公开核度量
+   -mp, - metrics -端口int端口，用于在其上公开细胞核度量（默认为9092）

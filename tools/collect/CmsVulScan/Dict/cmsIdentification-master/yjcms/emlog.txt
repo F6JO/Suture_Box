@@ -1,0 +1,10 @@
+/robots.txt------emlog------Emlog
+/wlwmanifest.xml------emlog------Emlog
+/content/cache/links------emlog------Emlog
+/content/cache/options------emlog------Emlog
+/content/cache/blogger------emlog------Emlog
+/admin/views/default/main.css------emlog------Emlog
+/admin/views/style/default/style.css------emlog------Emlog
+/admin/views/style/green/style.css------emlog------Emlog
+/content/templates/default/main.css------emlog------Emlog
+/content/templates/default/tpl.ini------emlog------Emlog

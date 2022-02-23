@@ -1,0 +1,14 @@
+/license.txt------espcms------EspCMS
+/------espcms------EspCMS
+/adminsoft/control/connected.php------espcms------EspCMS
+/adminsoft/control/sqlmanage.php------espcms------EspCMS
+/adminsoft/include/admin_language_cn.php------espcms------EspCMS
+/adminsoft/js/control.js------espcms------EspCMS
+/install/dbmysql/db.sql------espcms------EspCMS
+/install/dbmysql/demodb.sql------espcms------EspCMS
+/install/lan_inc.php------espcms------EspCMS
+/install/sys_inc.php------espcms------EspCMS
+/install/templates/step.html------espcms------EspCMS
+/public/class_dbmysql.php------espcms------EspCMS
+/templates/wap/cn/public/footer.html------espcms------EspCMS
+/templates/wap/en/public/footer.html------espcms------EspCMS
