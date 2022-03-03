@@ -6,6 +6,26 @@ from functools import wraps
 
 from System import globalVar as gl
 from configparser import ConfigParser
+import tqdm,inspect,contextlib
+
+# 将信息打印在进度条上方
+@contextlib.contextmanager
+def redirect_to_tqdm():
+    # Store builtin print
+    old_print = print
+    def new_print(*args, **kwargs):
+        # If tqdm.tqdm.write raises error, use builtin print
+        try:
+            tqdm.tqdm.write(*args, **kwargs)
+        except:
+            old_print(*args, ** kwargs)
+
+    try:
+        # Globaly replace print with new_print
+        inspect.builtins.print = new_print
+        yield
+    finally:
+        inspect.builtins.print = old_print
 
 # 读取ini文件
 def read_ini_dict(title):
@@ -25,7 +45,12 @@ def Get_tool_path(path,gongju):
     if gongju == 'all':
         list = []
         for i in os.listdir(path):
-            list.append(path + '/' + i)
+            a = i.split('/')
+            if '.' in a[-1]:
+                pass
+            else:
+                if a[-1] not in gl.get('exclude'):
+                    list.append(path + '/' + i)
         return list
     else:
         list = []

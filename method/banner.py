@@ -3,7 +3,7 @@ from method.function import col as color
 import random
 
 # 随机获取banner
-from prettytable import prettytable
+import prettytable
 
 banner_1 = color(r""" 
    _____       __                     ____            

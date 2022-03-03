@@ -3,6 +3,7 @@ import os
 import platform
 import threading
 
+
 from System import globalVar as gl
 from controller.controller import Repeater
 from method.colour import Get_colour
@@ -34,6 +35,7 @@ def main(target,moude,tool,info,single,exclude,output_file):
     gl.set('output_file',output_file)
     gl.set('file_exis',True)
     gl.set('system',platform.system())  # 系统信息
+    # gl.set('jindu',)
     Repeater(moude,tool)    # 进入中继模块
 
 

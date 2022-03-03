@@ -1,5 +1,5 @@
 # Suture_Box
-集合渗透测试常用工具进行一键扫描的缝合怪
+集合渗透测试常用工具对目标进行一键扫描的缝合怪
 
 ***
 
@@ -23,7 +23,6 @@
 
 ## Thank
 * 感谢以上作者的优秀开源项目
-
 ## Configure（NO.1!）
 * 1、打开tools/config.ini中（windows打开config-win.ini）
 * 2、修改 start_mode 的中配置为命令行中调用python3的方式，如 python或python3

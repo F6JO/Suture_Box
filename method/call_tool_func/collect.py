@@ -19,13 +19,24 @@ def dirmap(row):
 def dismap(row):
     for i in row:
         i = i.replace('\n', '')
-        if '[+] ' in i:
-            print(gl.get('time')() + gl.get('+') + gl.get('col')('[dismap]', 'yellow') + ' ' + gl.get('col')(
-                i.split('[+] ')[1], 'cyan'))
-            output('[dismap] ' + i.split('[+] ')[1])
-        elif '[-]' in i and gl.get('info'):
-            print(gl.get('time')() + gl.get('*') + gl.get('col')('[dismap]', 'yellow') + ' ' +
-                  gl.get('col')(i.split('[-] ')[1], 'cyan'))
+        i = i.split(',')
+        str = ''
+        a = 1
+        for x in i:
+            if a == 1:
+                a+=1
+                continue
+            str += x +' '
+        print(gl.get('time')() + gl.get('+') + gl.get('col')('[dismap]', 'yellow') + ' ' + gl.get('col')(
+                      str, 'cyan'))
+        output('[dismap] ' + str)
+        # if '[+] ' in i:
+        #     print(gl.get('time')() + gl.get('+') + gl.get('col')('[dismap]', 'yellow') + ' ' + gl.get('col')(
+        #         i.split('[+] ')[1], 'cyan'))
+        #     output('[dismap] ' + i.split('[+] ')[1])
+        # elif '[-]' in i and gl.get('info'):
+        #     print(gl.get('time')() + gl.get('*') + gl.get('col')('[dismap]', 'yellow') + ' ' +
+        #           gl.get('col')(i.split('[-] ')[1], 'cyan'))
 
 @lock_print
 def CmsVulScan(row):

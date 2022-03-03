@@ -13,7 +13,7 @@ def command_proc(comm, tool):
     elif tool == 'dirmap':
         comm = comm + f' -lcf -i {gl.get("target")}'
     elif tool == 'dismap':
-        comm = comm + f' -url {gl.get("target")}'
+        comm = comm + f' -u {gl.get("target")}'
     elif tool == 'CmsVulScan':
         comm = comm + f' -u {gl.get("target")}'
     elif tool == 'JSFinder':
