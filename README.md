@@ -55,6 +55,8 @@ python3 suturebox.py -u https://xxx.xxx.xxx/ -m vulscan -x vulmap,nuclei
 <img src="./imager/collect.png"/>
 <img src="./imager/vulscan.png"/>
 
+### Update
+* 2022-03-03 增加进度条显示
 ## 警告
 ***
 ### 请勿用于非法用途！否则自行承担一切后果
