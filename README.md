@@ -21,8 +21,6 @@
 * tr0uble-mAker/POC-bomber https://github.com/tr0uble-mAker/POC-bomber 利用大量高威胁poc/exp快速获取目标权限，用于渗透和红队快速打点
 * projectdiscovery/nuclei https://github.com/projectdiscovery/nuclei 基于简单的基于YAML的DSL的快速可定制漏洞扫描器。
 
-## Thank
-* 感谢以上作者的优秀开源项目
 ## Configure（NO.1!）
 * 1、打开tools/config.ini中（windows打开config-win.ini）
 * 2、修改 start_mode 的中配置为命令行中调用python3的方式，如 python或python3
@@ -57,6 +55,6 @@ python3 suturebox.py -u https://xxx.xxx.xxx/ -m vulscan -x vulmap,nuclei
 
 ### Update
 * 2022-03-03 增加进度条显示
-## 警告
+## Last words
 ***
-### 请勿用于非法用途！否则自行承担一切后果
+### 还是别用了，bug太多了懒得改了
