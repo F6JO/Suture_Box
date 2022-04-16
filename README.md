@@ -56,5 +56,7 @@ python3 suturebox.py -u https://xxx.xxx.xxx/ -m vulscan -x vulmap,nuclei
 ### Update
 * 2022-03-03 增加进度条显示
 ## Last words
-***
-### 还是别用了，bug太多了懒得改了
+### Last
+1、集成的工具有点多，整个项目太大，后面会改成在线下载
+2、bug也有点多，后面也会改，或者直接上docker
+3、以上两条有时间会做的！
