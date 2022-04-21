@@ -60,4 +60,4 @@ python3 suturebox.py -u https://xxx.xxx.xxx/ -m vulscan -x vulmap,nuclei
 ### Last words
 * 集成的工具有点多，整个项目太大，后面会改成在线下载
 * bug也有点多，后面也会改，或者直接上docker
-* 以上两条有时间会做的！
+* 有问题或有想加的工具和功能可以提Issues
