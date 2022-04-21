@@ -22,8 +22,9 @@
 * projectdiscovery/nuclei https://github.com/projectdiscovery/nuclei 基于简单的基于YAML的DSL的快速可定制漏洞扫描器。
 
 ## Configure（NO.1!）
-* 1、打开tools/config.ini中（windows打开config-win.ini）
-* 2、修改 start_mode 的中配置为命令行中调用python3的方式，如 python或python3
+* 1、~~打开tools/config.ini中（windows打开config-win.ini）~~
+* 2、~~修改 start_mode 的中配置为命令行中调用python3的方式，如 python或python3~~
+* 3、配置文件修改为自动生成
 
 
 ## Tool_help:
