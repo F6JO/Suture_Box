@@ -60,23 +60,23 @@ def banner():
 # 工具详细列表
 def Get_list():
     row = prettytable.PrettyTable()
-    row.field_names = ['Method', "Tool", 'By', "Url", "Info"]
-    row.add_row(['Collect', "dismap", 'zhzyker', 'https://github.com/zhzyker/dismap',
+    row.field_names = ['Method', "Tool", 'By', "Info"]
+    row.add_row(['Collect', "dismap", 'zhzyker',
                  '快速识别 Web 指纹信息，定位资产类型。辅助红队快速定位目标资产信息，辅助蓝队发现疑似脆弱点'])
-    row.add_row(['Collect', "dirmap", 'H4ckForJob', 'https://github.com/H4ckForJob/dirmap',
+    row.add_row(['Collect', "dirmap", 'H4ckForJob',
                  '一个高级web目录、文件扫描工具，功能将会强于DirBuster、Dirsearch、cansina、御剑。'])
-    row.add_row(['Collect', "identYwaf", 'stamparm', 'https://github.com/stamparm/identYwaf', 'WAF识别工具'])
-    row.add_row(['Collect', "JSFinder", 'Threezh1', 'https://github.com/Threezh1/JSFinder',
+    row.add_row(['Collect', "identYwaf", 'stamparm',  'WAF识别工具'])
+    row.add_row(['Collect', "JSFinder", 'Threezh1',
                  'JSFinder是一种用于从网站上的JS文件中快速提取URL和子域的工具'])
-    row.add_row(['Collect', "ksubdomain", 'knownsec', 'https://github.com/knownsec/ksubdomain', '无状态子域名爆破工具'])
-    row.add_row(['Collect', "TideFinger", 'TideSec', 'https://github.com/TideSec/TideFinger',
+    row.add_row(['Collect', "ksubdomain", 'knownsec',  '无状态子域名爆破工具'])
+    row.add_row(['Collect', "TideFinger", 'TideSec',
                  'TideFinger——指纹识别小工具，汲取整合了多个web指纹库，结合了多种指纹检测方法，让指纹检测更快捷、准确。'])
-    row.add_row(['Collect', "CmsVulScan", 'F6JO', 'https://github.com/F6JO/CmsVulScan',
+    row.add_row(['Collect', "CmsVulScan", 'F6JO',
                  'cms识别工具，用于识别网站使用的cms，收集了github上多个扫描工具的指纹'])
-    row.add_row(['Vulscan', "vulmap", 'zhzyker', 'https://github.com/zhzyker/vulmap',
+    row.add_row(['Vulscan', "vulmap", 'zhzyker',
                  'Vulmap 是一款 web 漏洞扫描和验证工具, 可对 webapps 进行漏洞扫描, 并且具备漏洞验证功能'])
-    row.add_row(['Vulscan', "POC-bomber", 'tr0uble-mAker', 'https://github.com/tr0uble-mAker/POC-bomber',
+    row.add_row(['Vulscan', "POC-bomber", 'tr0uble-mAker',
                  '利用大量高威胁poc/exp快速获取目标权限，用于渗透和红队快速打点'])
-    row.add_row(['Vulscan', "nuclei", 'projectdiscovery', 'https://github.com/projectdiscovery/nuclei',
+    row.add_row(['Vulscan', "nuclei", 'projectdiscovery',
                  '基于简单的基于YAML的DSL的快速可定制漏洞扫描器'])
     return row

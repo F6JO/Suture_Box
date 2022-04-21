@@ -1,1 +1,0 @@
-21:41:15, tcp, http, [200] [Apache-Tomcat], http://150.158.93.247:25527, Apache Tomcat/8.5.19

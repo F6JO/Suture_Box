@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 import os
 import platform
+import sys
 import threading
 
 
@@ -10,6 +11,7 @@ from method.colour import Get_colour
 from method.function import times,col,handle_exclude_list
 from method.command import command
 from method.banner import banner,Get_list
+from method.set_ini import ini_init
 
 print(banner())     # 打印随机banner
 args = command()    # 获取参数
@@ -35,12 +37,15 @@ def main(target,moude,tool,info,single,exclude,output_file):
     gl.set('output_file',output_file)
     gl.set('file_exis',True)
     gl.set('system',platform.system())  # 系统信息
-    # gl.set('jindu',)
+    gl.set('python',sys.executable)  # 系统信息
+    if not os.path.exists("./lock"): # 第一次执行初始化
+        ini_init()                   # 创建配置文件
+        open("./lock","w").close()
     Repeater(moude,tool)    # 进入中继模块
 
 
-if __name__ == '__main__':
 
+if __name__ == '__main__':
     target = args.target    # 目标
     moude = args.moude      # 模块
     tool = args.tool        # 工具

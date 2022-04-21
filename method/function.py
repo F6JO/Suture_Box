@@ -30,10 +30,10 @@ def redirect_to_tqdm():
 # 读取ini文件
 def read_ini_dict(title):
     conf = ConfigParser()  # 需要实例化一个ConfigParser对象
-    if gl.get('system') == 'Windows':
-        path = gl.get('root_path')+'/tools/config_win.ini'
-    else:
-        path = gl.get('root_path')+'/tools/config.ini'
+    # if gl.get('system') == 'Windows':
+    #     path = gl.get('root_path')+'/tools/config_win.ini'
+    # else:
+    path = gl.get('root_path')+'/tools/config.ini'
     conf.read(path,"utf-8-sig")
     zidian = {}
     for i in conf.items(title):
