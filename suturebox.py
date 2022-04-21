@@ -19,7 +19,7 @@ args = command()    # 获取参数
 # 初始化全局变量
 gl._init()
 
-def main(target,moude,tool,info,single,exclude,output_file):
+def main(target,modular,tool,info,single,exclude,output_file):
 
     # 将各常用变量注册为全局变量
     gl.set('root_path', os.getcwd())
@@ -41,16 +41,16 @@ def main(target,moude,tool,info,single,exclude,output_file):
     if not os.path.exists("./lock"): # 第一次执行初始化
         ini_init()                   # 创建配置文件
         open("./lock","w").close()
-    Repeater(moude,tool)    # 进入中继模块
+    Repeater(modular,tool)    # 进入中继模块
 
 
 
 if __name__ == '__main__':
     target = args.target    # 目标
-    moude = args.moude      # 模块
+    modular = args.modular      # 模块
     tool = args.tool        # 工具
     output_file = args.output_file  # 保存文件
     single = args.single    # 是否关闭同时扫描
     info = args.info        # 是否打印info消息
     exclude = handle_exclude_list(args.exclude) # 排除指定工具
-    print(Get_list()) if args.list else main(target,moude,tool,info,single,exclude,output_file) # 若有-list则打印列表
+    print(Get_list()) if args.list else main(target,modular,tool,info,single,exclude,output_file) # 若有-list则打印列表
