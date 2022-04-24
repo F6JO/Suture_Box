@@ -42,6 +42,8 @@ def main(target,modular,tool,info,single,exclude,output_file,down,proxy):
     gl.set('python',sys.executable)  # 系统信息
     gl.set('proxy',{'http':proxy,'https':proxy})  # 系统信息
     if not os.path.exists("./lock"): # 第一次执行初始化
+        if not os.path.exists("./tools"):
+            os.mkdir("./tools")
         ini_init()                   # 创建配置文件
         open("./lock","w").close()
     dow_rep(down)
